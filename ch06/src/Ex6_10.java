@@ -11,6 +11,8 @@ class Ex6_10 {
    }
 }
 
+// 오버로딩 - 매개변수는 다르지만 같은 의미의 기능 수행
+//			타입이 다르거나,
 class MyMath3 {
 	int add(int a, int b) {
 		System.out.print("int add(int a, int b) - ");

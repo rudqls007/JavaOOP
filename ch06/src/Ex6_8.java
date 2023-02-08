@@ -1,7 +1,23 @@
 class Data3 { int x; }
+class Mymath2{
+
+	long a , b;
+	
+	long add()	{return a + b;}
+	static  long add(long a, long b) {return a+ b;}	
+
+}
+
 
 class Ex6_8 {
 	public static void main(String[] args) {
+		
+		Mymath2 m = new Mymath2();
+		m.a = 200;
+		m.b = 100;
+		System.out.println(m.add());
+		
+		
 		Data3 d = new Data3();
 		d.x = 10;
 
@@ -17,4 +33,14 @@ class Ex6_8 {
 
 		return tmp;   // 복사한 객체의 주소를 반환한다.
 	}
-}
+	
+	
+
+	
+	
+	
+	
+	
+	
+		
+	}
