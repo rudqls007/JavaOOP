@@ -17,8 +17,8 @@ class Ex6_4 {
 		System.out.println("subtract(5L, 3L) = " + result2);
 		System.out.println("multiply(5L, 3L) = " + result3);
 		System.out.println("divide(5L, 3L) = " + result4);
-		System.out.println("max(2,1) = " + result5);
-		System.out.println("min(2,1) = " + result6);
+		System.out.println("max(5,2) = " + result5);
+		System.out.println("min(5,2) = " + result6);
 	}
  }
 
