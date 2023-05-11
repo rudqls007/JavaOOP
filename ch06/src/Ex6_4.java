@@ -11,7 +11,7 @@ class Ex6_4 {
 		double result4 = mm.divide(5L, 3L);		// divide 메서드 호출
 		long result5 = mm.max(2, 5);
 		long result6 = mm.min(2, 5);
-		mm.printGugudan(10);
+		mm.printGugudan(9);
 
 		System.out.println("add(5L, 3L) = " + result1);
 		System.out.println("subtract(5L, 3L) = " + result2);
@@ -26,29 +26,27 @@ class Ex6_4 {
 
  class MyMath {							// 메서드는 무조건 클래스 영역 안에서만 정의가 가능하다.
 	 
-	void printGugudan(int dan) {		// 반환타입이 void일 경우 return 생략 가능
-		
-		if(!(2 <= dan && dan <=9))
-			return;		// 입력받은 단(dan)이 2~9가 아니면, 메서드를 종료하고 호출한 곳으로 돌아감.
-		
-		
-		for(int i=1; i<=9; i++) {
-			System.out.printf("%d * %d = %d%n", dan, i, dan * i );
-		}
-	}
-	 
+	 void printGugudan(int dan) {
+		 
+		 if(!(2<=dan && dan <= 9))
+			 return; // 입력받은 단(dan)이 2~9가 아니면, 메서드를 종료하고 돌아가기
+		 
+		 for(int i=1; i<=9; i++) {
+			 System.out.printf("%d * %d = %d%n ", dan, i, dan * i);
+		 }
+	 }
 	 
 	 
 	long add(long a, long b) {			// void 타입이 아닌 경우 무조건 return이 필요함.
 		long result = a + b;
-		return result;
+		return result;	// 타입이 일치해야 함 ( 자동형변환 )
 	//	return a + b;	// 위의 두 줄을 이와 같이 한 줄로 간단히 할 수 있다.
 	}
 	
 	// 두 값을 받아서 둘 중에 큰 값을 반환하는 메서드를 작성하시오.
 	long max (long a , long b) {
 		/*
-		 * if(a>b) { return a;} else { return b;}
+		 * if(a>b) { return a;} else { return b;}	리턴 문일 때 참이든 거짓이든 두 값 모두 리턴 문이 있어야 코드가 정상적으로 작동함.
 		 */
 		
 		return a > b ? a : b;
