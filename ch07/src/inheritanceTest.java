@@ -31,7 +31,9 @@ public class inheritanceTest {
 		
 		// Object ¸Þ¼­µå
 		System.out.println(c.toString());
+		System.out.println(c);
 		System.out.println(c2.toString());
+		System.out.println(c2);
 	}
 
 }
