@@ -11,7 +11,7 @@ class MyPoint {
  */
 
 class Circle {
-	MyPoint c = new MyPoint();
+	MyPoint c = new MyPoint();	// 참조변수의 초기화
 	int r;
 }
 
