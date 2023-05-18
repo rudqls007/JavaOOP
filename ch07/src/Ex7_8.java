@@ -11,7 +11,7 @@ class Product {
 class Tv1 extends Product {
 	Tv1() {
 		// 조상클래스의 생성자 Product(int price)를 호출한다.
-		super(100);		// Tv의 가격을 100만원으로 한다.
+		super(100);		// Tv의 가격을 100만원으로 한다. ( 조상의 생성자 ( Product 메서드 ) 호출 ) 
 	}
 
 	// Object클래스의 toString()을 오버라이딩한다.
@@ -44,6 +44,9 @@ class Ex7_8 {
 	public static void main(String args[]) {
 		Buyer b = new Buyer();
 
+		// product p = new Tv1(); 
+		// b.buy(p) 와 같음 buy 메서드의 매개변수에 리모콘인 Product p 가 있기 때문에 buy 메서드 안에서는 객체를 만들지 않고 멤버를 바로 넣어도 가능,
+		// 그렇지만 메인 메서드 안에서는 Tv 객체를 사용할 수 없음 왜? Tv 객체를 다룰 수 있는 리모콘이 없기 때문에.
 		b.buy(new Tv1());
 		b.buy(new Computer());
 
