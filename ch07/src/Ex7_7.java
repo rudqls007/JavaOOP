@@ -1,8 +1,45 @@
 class Ex7_7 {
+	
+	
 	public static void main(String args[]) {
-		Car c = new Car();
-		FireEngine fe = (FireEngine)c;
-		fe.drive();						
+
+		
+		
+		
+		
+		FireEngine fe = new FireEngine();
+		Car car = new Car();
+		
+		if(fe instanceof Car) {
+			Car car1 = (Car)fe;
+			car1.drive();
+		}
+		
+		System.out.println(fe instanceof Object);
+		System.out.println(fe instanceof Car);
+		System.out.println(fe instanceof FireEngine);
+		System.out.println(car instanceof FireEngine);
+		
+//		Car c = new Car();
+//		FireEngine fe = (FireEngine)c;	// 형변환 실행 에러 java.lang.ClassCastException 
+//										/* 형변환 타입만 맞다면 형변환은 가능하지만 Car 인스턴스의 멤버 갯수는 4개이고,
+//										 * FireEngine의 water() 메서드는 가지고 있지 않기 때문에 fe를 car로 형변환해도
+//										 * 실제 인스턴스인 Car에는 water()가 없으므로 사용할 수 없음.*/
+//		fe.water();
+		
+		
+		
+		
+		
+//		Car car = null;
+//		FireEngine fe = null;
+//		
+//		FireEngine fe2 = (FireEngine) car;
+//		Car car2 = (Car)fe2;
+//		car2.drive();	// NullPointerException 발생. 값이 Null이라서
+		
+		
+		
 		// 실제 Car 인스턴스의 멤버는 4개, FireEngine 인스턴스의 멤버는 5개이므로 Car 인스턴스의 멤버 갯수가 형변환하는 FireEngine의 멤버 갯수보다 적기 때문에 형변환 오류가 뜸.
 		
 		
@@ -24,6 +61,8 @@ class Ex7_7 {
 //		fe2.water();
 	}
 }
+
+
 
 class Car {
 	String color;
