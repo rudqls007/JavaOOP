@@ -23,5 +23,24 @@ public class Main {
 		System.out.println(arr);
 		
 	}
+	int main() {
+	    int N = 5, S = 12;
+	    int A[] = {1,2,3,7,5};
+
+	    int start = 0, end = 0, sum = A[0];
+	    while (end < N) {
+	        if (sum < S) {
+	            end++;
+	            sum += A[end];
+	        } else if (sum > S) {
+	            sum -= A[start];
+	            start++;
+	        } else {
+	            System.out.printf("%d %d\n", start+1, end+1);
+	            break;
+	        }
+	    }
+	    return 0;
+	}
 	
 }
