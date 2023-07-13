@@ -42,7 +42,7 @@ public class test48 {
 //	(((()(()()))(())()))(()())
 //	▣ 출력예제 2
 //	24
-//	출처 : 한국정보올림피아드
+
 
 	public static int sol(String answer) {
 		Stack<Character> stack = new Stack<Character>();
