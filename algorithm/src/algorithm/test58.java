@@ -3,6 +3,8 @@ package algorithm;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
+//Java - 자바 알고리즘 문제풀이 (14)  보이는 학생
 public class test58 {
 
 	public static void main(String[] args) {
