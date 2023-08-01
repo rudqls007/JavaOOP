@@ -3,6 +3,7 @@ package algorithm;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// 가위 바위 보
 public class test_14 {
 	public static void main(String[] args) {
 //  	1:가위, 2:바위, 3:보
