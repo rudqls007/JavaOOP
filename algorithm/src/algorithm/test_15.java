@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
+// Java - 자바 알고리즘 문제풀이 (42) - 교육과정 설계
+
+
 public class test_15 {
 
 	public static String sol(String str, String string) {
