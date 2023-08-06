@@ -8,6 +8,9 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.Map.Entry;
 
+
+// Java - 자바 알고리즘 문제풀이 (33) 매출액의 종류
+// https://blog.naver.com/hansoo0724/222670928603 = 문제 풀이 
 public class Test_33 {
 //	매출액의 종류
 //	현수의 아빠는 제과점을 운영합니다. 현수아빠는 현수에게 N일 동안의 매출기록을 주고 연속
