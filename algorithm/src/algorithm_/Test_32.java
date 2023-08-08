@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Scanner;
 
+// Java - 자바 알고리즘 문제풀이 (32) 아나그램 (해쉬)
+// https://blog.naver.com/hansoo0724/222664567928 = 풀이
 public class Test_32 {
 //	아나그램(해쉬)
 //	Anagram이란 두 문자열이 알파벳의 나열 순서를 다르지만 그 구성이 일치하면 두 단어는 아
