@@ -3,7 +3,7 @@ package algorithm_;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//자바 알고리즘 문제풀이 (20) 등수구하기
+// 자바 알고리즘 문제풀이 (20) 등수구하기
 
 public class Test_22 {
 
