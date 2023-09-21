@@ -5,6 +5,10 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
+
+// Java - 자바 알고리즘 문제풀이 (33) 매출액의 종류
+
+
 public class Test_39 {
 
 	
