@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Test_51 {
 
-	
-	
 	public static void main(String[] args) {
 //		뒤집은 소수
 //		N개의 자연수가 입력되면 각 자연수를 뒤집은 후 그 뒤집은 수가 소수이면 그 소수를 출력하
@@ -30,12 +28,12 @@ public class Test_51 {
 		StringBuilder build = new StringBuilder();
 
 		for (int i = 0; i < n; i++) {
-			
+
 			s = build.append(sc.next()).reverse().toString();
 			int num = Integer.parseInt(s);
-			
+
 			int count = 0;
-			
+
 			for (int j = 1; j <= num; j++) {
 				if (num % j == 0) {
 					count++;
@@ -44,9 +42,9 @@ public class Test_51 {
 			if (count == 2) {
 				result += num + " ";
 			}
-			build.setLength(0); //초기화 } System.out.println(result);
+			build.setLength(0); // 초기화 } System.out.println(result);
 		}
 		System.out.println(result);
-		
+
 	}
 }
