@@ -6,6 +6,12 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+
+// 모음사전 예제
+
+// 1) 완전탐색을 사용해 조합될 수 있는 모든 모음의 경우의 수를 찾은 후 HashSet에 저장한다.
+// 2) 저장된 HashSet을 오름차순으로 정렬한 후, word가 몇 번째 순서인지 리턴한다.
+
 public class Test_54 {
 
 	
